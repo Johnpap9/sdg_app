@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Αξιολόγηση SDGs Εκπαιδευτικού Ιδρύματος</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Αξιολόγηση SDGs</h1>
+    
+    <!-- Επιλογή Έτους Αξιολόγησης -->
+    <div class="yearSelection">
+      <label for="evalYear">Έτος Αξιολόγησης:</label>
+      <input type="text" id="evalYear" value="2024">
+    </div>
+    
+    <form id="sdgForm">
+      <table>
+        <thead>
+          <tr>
+            <th>Δείκτης</th>
+            <th>Βαθμολογία (<span id="evalYearLabel">2024</span>)</th>
+            <th>Σύνολο</th>
+            <th>Βάρος</th>
+            <th>Σταθμισμένη Τιμή</th>
+            <th>Ποσοστιαία Μεταβολή</th>
+            <th>Ανάγκη Βελτίωσης</th>
+          </tr>
+        </thead>
+        <tbody id="indicatorsBody">
+          <!-- Οι γραμμές θα δημιουργηθούν δυναμικά από το JavaScript -->
+        </tbody>
+      </table>
+      <button type="submit">Υπολογισμός Αξιολόγησης</button>
+    </form>
+
+    <section id="results">
+      <h2>Τελική Αξιολόγηση</h2>
+      <p id="finalScore">---</p>
+    </section>
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
